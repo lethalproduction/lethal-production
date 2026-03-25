@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Orbitron:wght@400;500;700;900&display=swap');
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Orbitron', sans-serif;
+
+  --color-background: #030303;
+  --color-foreground: #ffffff;
+  
+  --color-neon-red: #ff003c;
+  --color-neon-red-glow: rgba(255, 0, 60, 0.5);
+  --color-neon-red-dim: rgba(255, 0, 60, 0.15);
+
+  --color-glass: rgba(255, 255, 255, 0.03);
+  --color-glass-border: rgba(255, 255, 255, 0.08);
+}
+
+:root {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-sans antialiased overflow-x-hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-display tracking-wider;
+}
+
+/* Custom Cinematic Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a0810;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-neon-red);
+}
+
+/* Utilities for glassmorphism and glows */
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 20px var(--color-neon-red-glow), 0 0 40px var(--color-neon-red-dim);
+  }
+  
+  .box-glow {
+    box-shadow: 0 0 20px var(--color-neon-red-dim), inset 0 0 15px var(--color-neon-red-dim);
+  }
+  
+  .border-glow {
+    border-color: var(--color-neon-red);
+    box-shadow: 0 0 15px var(--color-neon-red-glow);
+  }
+
+  .glass-panel {
+    @apply bg-glass backdrop-blur-xl border border-glass-border;
+  }
+}
