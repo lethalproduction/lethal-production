@@ -23,7 +23,7 @@ const CREATORS: Creator[] = [
     channelUrl: "https://www.youtube.com/channel/UCduDn-LMmTNsBRjCI0xopeQ",
     description:
       "A dynamic content creator known for engaging content and strong audience connection. Consistently delivering high-energy videos that keep viewers hooked.",
-    avatar: "/mrtrap.png",
+    avatar: "/images/mrtrap.png",
     accentColor: "#ff003c",
     glowColor: "rgba(255,0,60,0.45)",
   },
@@ -33,7 +33,7 @@ const CREATORS: Creator[] = [
     channelUrl: "https://www.youtube.com/channel/UCDofWxFAnXPcvz2Ijdzq3FA",
     description:
       "A creative and entertaining creator bringing unique style and energy to the community. Known for bold storytelling and a fearless approach to content.",
-    avatar: "/ruimpirate.png",
+    avatar: "/images/ruimpirate.png",
     accentColor: "#a855f7",
     glowColor: "rgba(168,85,247,0.45)",
   },
