@@ -1,0 +1,15 @@
+packages:
+  "framer-motion": "Required for the cinematic scroll animations, staggered card reveals, and smooth hover lifts requested in the design."
+  "lucide-react": "For polished icons in the UI if needed."
+  "clsx": "For conditional class name joining."
+  "tailwind-merge": "For merging tailwind classes safely."
+
+images:
+  - path: "artifacts/lethal-production/public/images/dark-texture.png"
+    description: "A very dark, nearly black, subtle gritty noise texture with extremely faint, deep crimson red atmospheric fog or light leaks in the background. Cinematic, premium gaming aesthetic, abstract."
+    aspect_ratio: "16:9"
+
+notes:
+  - This is a purely frontend, static landing page with no backend API requirements.
+  - Using Framer Motion for high-quality, cinematic scroll animations and complex staggers.
+  - Using Tailwind v4 inline theme variables for custom fonts and neon colors.
